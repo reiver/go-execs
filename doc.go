@@ -7,11 +7,11 @@ Package execs is meant to work with the "os/exec" package, that is part of the G
 Example Usage
 
 	
-	ex1 := cmd.Command("echo", "hello")
+	ex1 := exec.Command("echo", "hello") // <- from "os/exec"
 	
 	ex2 := &execs.Inline{ Func: func1 }
 	
-	ex3 := cmd.Command("grep", "city")
+	ex3 := exec.Command("grep", "city") // <- from "os/exec"
 	
 	ex4 := &execs.Inline{ Func: func2 }
 	
